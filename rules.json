@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://nhentai.net/"
+        },
+        {
+          "header": "Origin",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||t.nhentai.net/",
+      "resourceTypes": ["image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://nhentai.xxx/"
+        },
+        {
+          "header": "Origin",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||t.nhentai.xxx/",
+      "resourceTypes": ["image", "xmlhttprequest"]
+    }
+  }
+]

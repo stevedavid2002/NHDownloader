@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "NH Downloader Free",
+  "version": "1.0.0",
+  "description": "Lightweight queue downloader with one-click gallery download buttons.",
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "action": {
+    "default_title": "NH Downloader Free",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "permissions": [
+    "downloads",
+    "storage",
+    "alarms",
+    "tabs",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://nhentai.net/*",
+    "*://*.nhentai.net/*",
+    "*://nhentai.xxx/*",
+    "*://*.nhentai.xxx/*",
+    "*://t.nhentai.net/*",
+    "*://t.nhentai.xxx/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "nh_thumb_referrer",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://nhentai.net/*",
+        "*://*.nhentai.net/*",
+        "*://nhentai.xxx/*",
+        "*://*.nhentai.xxx/*"
+      ],
+      "run_at": "document_end",
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/q-widget-icon.png"],
+      "matches": [
+        "*://nhentai.net/*",
+        "*://*.nhentai.net/*",
+        "*://nhentai.xxx/*",
+        "*://*.nhentai.xxx/*"
+      ]
+    }
+  ]
+}

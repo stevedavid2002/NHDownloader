@@ -36,6 +36,8 @@ The extension tracks:
 2. Enable Developer Mode
 3. Click `Load unpacked`
 4. Select the extension folder
+5. Open `nhentai.net` or `nhentai.xxx`
+6. Use the Queue button on gallery covers to add download tasks
 
 ## Permissions
 

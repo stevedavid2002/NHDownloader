@@ -1,39 +1,55 @@
-# NH Downloader Free
+# NHDownloader
 
-NH Downloader Free is a lightweight Chrome/Edge Manifest V3 extension that adds one-click queue buttons to supported gallery pages.
+NHDownloader is a lightweight browser extension focused on queue-based downloading and archive workflow management.
 
-This free edition keeps only the queue downloader:
+Designed for users who want a smoother experience when handling large gallery collections.
 
-- Adds a `Queue` button to gallery cards and gallery links.
-- Keeps a small floating queue panel on supported pages.
-- Downloads queued galleries one at a time by opening the gallery page in a background tab and triggering the site's ZIP download flow.
-- Tracks active, completed, failed, and waiting queue items in browser local storage.
-- Includes an optional Patreon support button.
+## Features
 
-The local library, reader, folder import, metadata review, favorites sync, and auto-refill features from the Pro build are not included.
+* Queue-based task management
+* One-click queue buttons on supported pages
+* Floating queue panel
+* Sequential download processing
+* Download progress tracking
+* Local browser storage support
+* Lightweight Manifest V3 architecture
 
-## Install Locally
+## Workflow
 
-1. Open `chrome://extensions` or `edge://extensions`.
-2. Enable Developer mode.
-3. Choose `Load unpacked`.
-4. Select this folder.
+Queued items are processed one at a time in background tabs while keeping the browsing experience clean and uninterrupted.
+
+The extension tracks:
+
+* waiting tasks
+* active downloads
+* completed items
+* failed tasks
+
+## Installation
+
+1. Open `chrome://extensions` or `edge://extensions`
+2. Enable Developer Mode
+3. Click `Load unpacked`
+4. Select the extension folder
 
 ## Permissions
 
-- `downloads`: watches browser download progress so completed tasks can leave the queue.
-- `storage`: stores the queue and download history locally in the browser.
-- `alarms`: recovers stuck queue tasks and resumes cooldown timers.
-- `tabs`: opens queued gallery pages in background tabs to trigger downloads.
-- `declarativeNetRequest`: keeps thumbnail requests working on supported hosts.
+* `downloads` — monitors download progress
+* `storage` — stores queue data locally
+* `tabs` — handles background processing
+* `alarms` — resumes interrupted tasks
+* `declarativeNetRequest` — keeps supported requests working correctly
+
+## Notes
+
+This project is intended for personal workflow and archival purposes.
+
+Users are responsible for complying with local laws and website terms of service.
 
 ## Support
 
-Use the in-extension Support button if this project saves you time.
+Development support and future updates may be available through external creator platforms.
 
 ## License
 
-GPL-3.0-only. See [LICENSE](LICENSE).
-
-This project is intended for personal archival and workflow purposes only.
-Users are responsible for complying with local laws and website terms of service.
+GPL-3.0-only

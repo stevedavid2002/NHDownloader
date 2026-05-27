@@ -1,9 +1,13 @@
 # NHDownloader
 
-NHDownloader is a lightweight browser extension focused on queue-based downloading and archive workflow management.
+A lightweight browser extension for queue-based downloading on nhentai-style gallery websites.
 
-Designed for users who want a smoother experience when handling large gallery collections.
+Currently supports:
 
+nhentai.net
+nhentai.xxx
+
+Built for users who want a cleaner and more automated download workflow.
 ## Features
 
 * Queue-based task management

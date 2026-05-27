@@ -1,4 +1,5 @@
-<img width="1043" height="1508" alt="7e1a174b-47a0-4587-a0e2-c2202d45fb79" src="https://github.com/user-attachments/assets/6d00bd0f-c025-40cd-ac3e-a60a57d118d7" />
+<img width="281" height="436" alt="21124512" src="https://github.com/user-attachments/assets/6010f6d8-0821-4de2-a994-ceafab6191a7" />
+<img width="470" height="680" alt="412498217902" src="https://github.com/user-attachments/assets/267cbddd-2a48-49bf-94fe-a1bc81ef58d2" />
 # NHDownloader
 
 A lightweight browser extension for queue-based downloading on nhentai-style gallery websites.
